@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- icon -->
+    <link rel="icon" href="img/2899445.png">
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootsrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="py-5 position-relative min-vh-100">
+        <div class="container d-flex flex-column justify-content-center align-content-center">
+            <h1 class="py-2 mx-auto position-relative z-3">Bookmarker</h1>
+            <div
+                class="bookmark-body d-flex flex-column justify-content-center align-content-center p-3 py-4 mt-5 w-100 gap-4">
+                <h2 class="mx-auto">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name d-flex flex-column justify-content-center w-100">
+                    <label for="siteName" class="mb-2">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name
+                    </label>
+                    <input type="text" class="form-control" placeholder="Bookmark Name" id="siteName">
+                    <p id="nameRules" class="text-danger ms-2 mt-1">
+                    </p>
+                </div>
+                <div class="site-link d-flex flex-column justify-content-center w-100">
+                    <label for="siteLink" class="mb-2">
+                        <i class="fa-solid fa-link pe-1"></i>
+                        Site URL
+                    </label>
+                    <input type="url" class="form-control" placeholder="Website URL" id="siteLink">
+                    <p id="linkRules" class="text-danger ms-2 mt-1">
+                    </p>
+                </div>
+                <button class="btn btn-submit px-5 mx-auto" id="btn">Submit
+                </button>
+            </div>
+            <table class="table text-center mt-4 bg-light">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
